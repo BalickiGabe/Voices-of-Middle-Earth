@@ -1,10 +1,11 @@
-import { Box, Button, ButtonGroup, Container } from "@mui/material";
+import { ButtonGroup, Container } from "@mui/material";
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import ContentCard from "./ContentCard";
-import BungalowIcon from "@mui/icons-material/Bungalow";
 
-export default function Dwarves({ title }) {
+import HomeButton from "./HomeButton";
+
+export default function Dwarves() {
   const imageUrl = process.env.PUBLIC_URL + "/images/Mine.webp";
 
   const [quote, setQuote] = useState("");
@@ -66,16 +67,7 @@ export default function Dwarves({ title }) {
         textAlign: "left",
       }}
     >
-      <Box>
-        <Button sx={{ marginTop: "2rem" }}>
-          <BungalowIcon
-            sx={{
-              fontSize: "3rem",
-              color: "goldenrod",
-            }}
-          />
-        </Button>
-      </Box>
+      <HomeButton />
       <ButtonGroup variant="contained" sx={{ margin: "3rem" }}>
         <Buttons
           title={"Gimli"}

@@ -1,13 +1,11 @@
-import { Box, Button, ButtonGroup, Container } from "@mui/material";
+import { ButtonGroup, Container } from "@mui/material";
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import ContentCard from "./ContentCard";
-import BungalowIcon from "@mui/icons-material/Bungalow";
-import { useNavigate } from "react-router-dom";
+import HomeButton from "./HomeButton";
 
 export default function Maiar({ title }) {
   const imageUrl = process.env.PUBLIC_URL + "/images/Wizard.webp";
-  const navigate = useNavigate();
 
   const [quote, setQuote] = useState("");
 
@@ -69,26 +67,7 @@ export default function Maiar({ title }) {
         paddingTop: "1.5rem",
       }}
     >
-      <Box>
-        <Buttons
-          title={
-            <BungalowIcon
-              sx={{
-                fontSize: "3rem",
-                color: "goldenrod",
-              }}
-            />
-          }
-          path="/"
-          onClick={navigate("/")}
-          buttonColor={"linear-gradient(145deg, #FFD700, #FFA500)"}
-          hoverColor={{
-            background: "linear-gradient(145deg, #FFD700, #EAC117)",
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-            transform: "translateY(-2px)",
-          }}
-        />
-      </Box>
+      <HomeButton />
 
       <ButtonGroup variant="contained" sx={{ margin: "3rem" }}>
         <Buttons

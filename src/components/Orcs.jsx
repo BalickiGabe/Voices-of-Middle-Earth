@@ -1,8 +1,8 @@
-import { Box, Button, ButtonGroup, Container } from "@mui/material";
+import { ButtonGroup, Container } from "@mui/material";
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import ContentCard from "./ContentCard";
-import BungalowIcon from "@mui/icons-material/Bungalow";
+import HomeButton from "./HomeButton";
 
 export default function Elves({ title }) {
   const imageUrl = process.env.PUBLIC_URL + "/images/Mordor.webp";
@@ -66,23 +66,14 @@ export default function Elves({ title }) {
         textAlign: "left",
       }}
     >
-      <Box>
-        <Button sx={{ marginTop: "2rem" }}>
-          <BungalowIcon
-            sx={{
-              fontSize: "3rem",
-              color: "goldenrod",
-            }}
-          />
-        </Button>
-      </Box>
+      <HomeButton />
       <ButtonGroup variant="contained" sx={{ margin: "3rem" }}>
         <Buttons
           title={"Uglúk"}
           onClickAction={() => handleButtonClick("Uglúk")}
-          buttonColor={"linear-gradient(145deg, #7B1F1F, #570000)"}
+          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #9E2A2A, #7B1F1F)",
+            background: "linear-gradient(145deg, #b89672, #a67f5b)",
             boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
             transform: "translateY(-2px)",
           }}
@@ -90,9 +81,9 @@ export default function Elves({ title }) {
         <Buttons
           title={"Snaga"}
           onClickAction={() => handleButtonClick("Snaga (Two Towers orc)")}
-          buttonColor={"linear-gradient(145deg, #7B1F1F, #570000)"}
+          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #9E2A2A, #7B1F1F)",
+            background: "linear-gradient(145deg, #b89672, #a67f5b)",
             boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
             transform: "translateY(-2px)",
           }}
@@ -102,9 +93,9 @@ export default function Elves({ title }) {
           onClickAction={() =>
             handleButtonClick("Gothmog (Lieutenant of Morgul)")
           }
-          buttonColor={"linear-gradient(145deg, #7B1F1F, #570000)"}
+          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #9E2A2A, #7B1F1F)",
+            background: "linear-gradient(145deg, #b89672, #a67f5b)",
             boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
             transform: "translateY(-2px)",
           }}
@@ -112,9 +103,9 @@ export default function Elves({ title }) {
         <Buttons
           title={"Gorbag"}
           onClickAction={() => handleButtonClick("Gorbag")}
-          buttonColor={"linear-gradient(145deg, #7B1F1F, #570000)"}
+          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #9E2A2A, #7B1F1F)",
+            background: "linear-gradient(145deg, #b89672, #a67f5b)",
             boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
             transform: "translateY(-2px)",
           }}
@@ -122,9 +113,9 @@ export default function Elves({ title }) {
         <Buttons
           title={"Shagrat"}
           onClickAction={() => handleButtonClick("Shagrat")}
-          buttonColor={"linear-gradient(145deg, #7B1F1F, #570000)"}
+          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #9E2A2A, #7B1F1F)",
+            background: "linear-gradient(145deg, #b89672, #a67f5b)",
             boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
             transform: "translateY(-2px)",
           }}

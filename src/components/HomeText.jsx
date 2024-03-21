@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import Buttons from "./Buttons";
+import RaceButtons from "./RaceButtons";
 
-export default function HomeText({ onButtonClick }) {
+export default function HomeText() {
   return (
     <Box
       sx={{
@@ -22,6 +21,7 @@ export default function HomeText({ onButtonClick }) {
           flex: 1,
         }}
       >
+        <RaceButtons />
         <Typography
           variant="h2"
           sx={{
@@ -47,84 +47,6 @@ export default function HomeText({ onButtonClick }) {
           Mordor—and let the voices of Middle-earth guide you through tales of
           courage, wisdom, and intrigue. What stories will you uncover?
         </Typography>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flex: 1,
-            marginTop: "4rem",
-          }}
-        >
-          <ButtonGroup variant="contained">
-            <Buttons
-              title={"maiar"}
-              path="/Maiar"
-              onButtonClick={onButtonClick}
-              buttonColor={"linear-gradient(145deg, #FFD700, #FFA500)"}
-              hoverColor={{
-                background: "linear-gradient(145deg, #FFD700, #EAC117)",
-                boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-                transform: "translateY(-2px)",
-              }}
-            />
-            <Buttons
-              title={"Elf"}
-              path="/Elves"
-              onButtonClick={onButtonClick}
-              buttonColor={"linear-gradient(145deg, #FFD700, #FFA500)"}
-              hoverColor={{
-                background: "linear-gradient(145deg, #FFD700, #EAC117)",
-                boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-                transform: "translateY(-2px)",
-              }}
-            />
-            <Buttons
-              title={"Human"}
-              path="/Humans"
-              onButtonClick={onButtonClick}
-              buttonColor={"linear-gradient(145deg, #FFD700, #FFA500)"}
-              hoverColor={{
-                background: "linear-gradient(145deg, #FFD700, #EAC117)",
-                boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-                transform: "translateY(-2px)",
-              }}
-            />
-            <Buttons
-              title={"Dwarf"}
-              path="/Dwarves"
-              onButtonClick={onButtonClick}
-              buttonColor={"linear-gradient(145deg, #FFD700, #FFA500)"}
-              hoverColor={{
-                background: "linear-gradient(145deg, #FFD700, #EAC117)",
-                boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-                transform: "translateY(-2px)",
-              }}
-            />
-            <Buttons
-              title={"Hobbit"}
-              path="/Hobbits"
-              onButtonClick={onButtonClick}
-              buttonColor={"linear-gradient(145deg, #FFD700, #FFA500)"}
-              hoverColor={{
-                background: "linear-gradient(145deg, #FFD700, #EAC117)",
-                boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-                transform: "translateY(-2px)",
-              }}
-            />
-            <Buttons
-              title={"orc"}
-              path="/Orcs"
-              onButtonClick={onButtonClick}
-              buttonColor={"linear-gradient(145deg, #FFD700, #FFA500)"}
-              hoverColor={{
-                background: "linear-gradient(145deg, #FFD700, #EAC117)",
-                boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-                transform: "translateY(-2px)",
-              }}
-            />
-          </ButtonGroup>
-        </div>
       </Box>
     </Box>
   );

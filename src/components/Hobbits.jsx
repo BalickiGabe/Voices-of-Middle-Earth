@@ -1,8 +1,8 @@
-import { Box, Button, ButtonGroup, Container } from "@mui/material";
+import { ButtonGroup, Container } from "@mui/material";
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import ContentCard from "./ContentCard";
-import BungalowIcon from "@mui/icons-material/Bungalow";
+import HomeButton from "./HomeButton";
 
 export default function Elves({ title }) {
   const imageUrl = process.env.PUBLIC_URL + "/images/hobbitHole.webp";
@@ -66,16 +66,7 @@ export default function Elves({ title }) {
         textAlign: "left",
       }}
     >
-      <Box>
-        <Button sx={{ marginTop: "2rem" }}>
-          <BungalowIcon
-            sx={{
-              fontSize: "3rem",
-              color: "goldenrod",
-            }}
-          />
-        </Button>
-      </Box>
+      <HomeButton />
       <ButtonGroup variant="contained" sx={{ margin: "3rem" }}>
         <Buttons
           title={"Bilbo"}

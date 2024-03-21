@@ -1,10 +1,10 @@
-import { Box, Button, ButtonGroup, Container } from "@mui/material";
+import { ButtonGroup, Container } from "@mui/material";
 import React, { useState } from "react";
 import Buttons from "./Buttons";
+import HomeButton from "./HomeButton";
 import ContentCard from "./ContentCard";
-import BungalowIcon from "@mui/icons-material/Bungalow";
 
-export default function Elves({ title }) {
+export default function Humans() {
   const imageUrl = process.env.PUBLIC_URL + "/images/humanHome.webp";
 
   const [quote, setQuote] = useState("");
@@ -66,81 +66,72 @@ export default function Elves({ title }) {
         textAlign: "left",
       }}
     >
-      <Box>
-        <Button sx={{ marginTop: "2rem" }}>
-          <BungalowIcon
-            sx={{
-              fontSize: "3rem",
-              color: "goldenrod",
-            }}
-          />
-        </Button>
-      </Box>
+      <HomeButton />
       <ButtonGroup variant="contained" sx={{ margin: "3rem" }}>
         <Buttons
           title={"Aragorn II Elessar"}
           onClickAction={() => handleButtonClick("Aragorn II Elessar")}
-          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"} // Simulating a wooden texture with color gradient
+          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #A0522D, #8B4513)", // Reverse gradient for hover effect
+            background: "linear-gradient(145deg, #A0522D, #8B4513)",
             boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)", // Shadow for depth, inset for highlight
-            transform: "translateY(-1px)", // Slight lift on hover for tactile feedback
+              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Théoden"}
           onClickAction={() => handleButtonClick("Théoden")}
-          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"} // Simulating a wooden texture with color gradient
+          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #A0522D, #8B4513)", // Reverse gradient for hover effect
+            background: "linear-gradient(145deg, #A0522D, #8B4513)",
             boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)", // Shadow for depth, inset for highlight
-            transform: "translateY(-1px)", // Slight lift on hover for tactile feedback
+              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Boromir"}
           onClickAction={() => handleButtonClick("Boromir")}
-          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"} // Simulating a wooden texture with color gradient
+          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #A0522D, #8B4513)", // Reverse gradient for hover effect
+            background: "linear-gradient(145deg, #A0522D, #8B4513)",
             boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)", // Shadow for depth, inset for highlight
-            transform: "translateY(-1px)", // Slight lift on hover for tactile feedback
+              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Faramir"}
           onClickAction={() => handleButtonClick("Faramir")}
-          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"} // Simulating a wooden texture with color gradient
+          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #A0522D, #8B4513)", // Reverse gradient for hover effect
+            background: "linear-gradient(145deg, #A0522D, #8B4513)",
             boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)", // Shadow for depth, inset for highlight
-            transform: "translateY(-1px)", // Slight lift on hover for tactile feedback
+              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Gríma Wormtongue"}
           onClickAction={() => handleButtonClick("Gríma Wormtongue")}
-          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"} // Simulating a wooden texture with color gradient
+          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #A0522D, #8B4513)", // Reverse gradient for hover effect
+            background: "linear-gradient(145deg, #A0522D, #8B4513)",
             boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)", // Shadow for depth, inset for highlight
-            transform: "translateY(-1px)", // Slight lift on hover for tactile feedback
+              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Éowyn"}
           onClickAction={() => handleButtonClick("Éowyn")}
-          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"} // Simulating a wooden texture with color gradient
+          buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #A0522D, #8B4513)", // Reverse gradient for hover effect
+            background: "linear-gradient(145deg, #A0522D, #8B4513)",
             boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)", // Shadow for depth, inset for highlight
-            transform: "translateY(-1px)", // Slight lift on hover for tactile feedback
+              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .2)",
+            transform: "translateY(-1px)",
           }}
         />
       </ButtonGroup>

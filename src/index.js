@@ -89,6 +89,48 @@ const theme = createTheme({
   content: {
     flexGrow: 1,
   },
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: "race" },
+          style: {
+            fontSize: "1.25rem",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            color: "black",
+            boxShadow: "0 3px 5px 2px rgba(0, 0, 0, 0.3)",
+            transition: "0.3s",
+            backgroundImage: "linear-gradient(145deg, #ffd700, #ffa500)",
+            "&:hover": {
+              backgroundImage: "linear-gradient(145deg, #FFD700, #EAC117)",
+              boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
+              transform: "translateY(-2px)",
+            },
+          },
+        },
+        {
+          props: { variant: "orc" },
+          style: {
+            fontSize: "1.25rem",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            color: "white",
+            boxShadow: "0 3px 5px 2px rgba(0, 0, 0, 0.3)",
+            transition: "0.3s",
+            backgroundImage:
+              "linear-gradient(145deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.85) 50%, rgba(0,0,0,1) 100%)",
+            "&:hover": {
+              backgroundImage:
+                "linear-gradient(145deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.85) 48%, rgba(0,0,0,1) 100%)",
+              boxShadow: "0 4px 10px 2px rgba(255, 255, 255, .3)",
+              transform: "translateY(-2px)",
+            },
+          },
+        },
+      ],
+    },
+  },
 });
 
 ReactDOM.render(
