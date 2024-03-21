@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Voices of Middle-Earth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Voices of Middle-Earth, a Lord of the Rings themed website created using React.js, Node.js, HTML, CSS, and JavaScript. This digital haven allows users to select different Middle-Earth races, delve into the characters associated with those races, and discover enchanting quotes from those characters, all fetched from The One API.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Voices of Middle-Earth is designed for fans of the Lord of the Rings series to explore the depth and breadth of Tolkien's universe. By navigating through the choices of races and characters, users can uncover quotes that resonate with the wisdom, humor, and bravery that define this legendary world. The public API that I was fetching from unfortunately only includes character quotes from the trillogy series.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Race Selection**: Immerse yourself by choosing from a list of Middle-Earth races.
+- **Character Discovery**: Find characters linked to each race and learn more about their lore through random generated character quotes, based on character selection.
+- **Adaptive Design**: Enjoy your journey on any device, thanks to a fully responsive design crafted for all screens.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React.js**: Utilized for its powerful UI capabilities, allowing for a dynamic and interactive user experience.
+- **Node.js**: Provides the backend support, facilitating communication with The One API and handling application logic.
+- **HTML & CSS**: The foundation of the website's structure and style, creating a visually appealing Middle-Earth environment.
+- **JavaScript**: Empowers the interactive elements of the website, enhancing the user's journey through Middle-Earth.
