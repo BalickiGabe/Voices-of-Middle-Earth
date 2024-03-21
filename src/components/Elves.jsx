@@ -6,7 +6,8 @@ import HomeButton from "./HomeButton";
 
 export default function Elves() {
   const imageUrl = process.env.PUBLIC_URL + "/images/Rivendell.webp";
-
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [quote, setQuote] = useState("");
 
   const fetchAndSetQuote = async (characterName) => {
@@ -58,12 +59,13 @@ export default function Elves() {
         borderRadius: "8px",
         backgroundImage: `url(${imageUrl})`,
         backgroundColor: "#c7b8ba",
-        boxShadow: "0 0 20px 0 rgba(0, 0, 0, 2)",
+        boxShadow: "0 0 20px 0 rgba(0, 0, 0, 0.2)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         height: "100vh",
         textAlign: "left",
+        padding: isMobile ? "1rem" : "3rem", // Adjust padding based on screen size
       }}
     >
       <HomeButton />
@@ -104,5 +106,3 @@ export default function Elves() {
     </Container>
   );
 }
-
-//"Legolas", "Galadriel", "Elrond"
