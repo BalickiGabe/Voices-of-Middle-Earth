@@ -24,7 +24,6 @@ export default function Buttons({
     <Button
       onClick={handleButtonClick}
       sx={{
-        fontSize: "1.25rem",
         padding: "10px 20px",
         borderRadius: "5px",
         color: "black",

@@ -10,9 +10,8 @@ export default function HomeButton() {
       <Button sx={{ marginTop: "2rem" }} onClick={() => navigate("/")}>
         <BungalowIcon
           sx={{
-            fontSize: "3rem",
             color: "goldenrod",
-            fontSize: { sm: "7rem", lg: "4rem" },
+            fontSize: { sm: "7rem", lg: "3rem" },
           }}
         />
       </Button>
