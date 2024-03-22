@@ -33,7 +33,7 @@ export default function HomeText() {
             background: "#f0f0f0",
             borderRadius: "10px",
             boxShadow: "0 6px 10px rgba(0, 0, 0, 0.3)",
-            fontSize: "1.5rem",
+            fontSize: { sm: "2.25rem", lg: "1.5rem" },
             lineHeight: "1.6",
           }}
         >

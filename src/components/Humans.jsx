@@ -67,7 +67,15 @@ export default function Humans() {
       }}
     >
       <HomeButton />
-      <ButtonGroup variant="contained" sx={{ margin: "3rem" }}>
+      <ButtonGroup
+        variant="contained"
+        sx={{
+          height: { sm: "8rem", lg: "3.4rem" },
+          margin: "3rem",
+          display: "flex",
+          flexWrap: "wrap",
+        }}
+      >
         <Buttons
           title={"Aragorn II Elessar"}
           onClickAction={() => handleButtonClick("Aragorn II Elessar")}

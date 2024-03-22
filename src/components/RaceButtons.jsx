@@ -17,22 +17,46 @@ export default function RaceButtons() {
       }}
     >
       <ButtonGroup variant="contained">
-        <Button onClick={() => navigate("/Maiar")} variant="race">
+        <Button
+          onClick={() => navigate("/Maiar")}
+          variant="race"
+          sx={{ fontSize: { sm: "2rem", lg: "1.25rem" } }}
+        >
           {"Maiar"}
         </Button>
-        <Button onClick={() => navigate("/Elves")} variant="race">
+        <Button
+          onClick={() => navigate("/Elves")}
+          variant="race"
+          sx={{ fontSize: { sm: "1.75rem", lg: "1.25rem" } }}
+        >
           {"Elf"}
         </Button>
-        <Button onClick={() => navigate("/Humans")} variant="race">
+        <Button
+          onClick={() => navigate("/Humans")}
+          variant="race"
+          sx={{ fontSize: { sm: "1.75rem", lg: "1.25rem" } }}
+        >
           {"Human"}
         </Button>
-        <Button onClick={() => navigate("/Dwarves")} variant="race">
+        <Button
+          onClick={() => navigate("/Dwarves")}
+          variant="race"
+          sx={{ fontSize: { sm: "1.75rem", lg: "1.25rem" } }}
+        >
           {"Dwarf"}
         </Button>
-        <Button onClick={() => navigate("/Hobbits")} variant="race">
+        <Button
+          onClick={() => navigate("/Hobbits")}
+          variant="race"
+          sx={{ fontSize: { sm: "1.75rem", lg: "1.25rem" } }}
+        >
           {"Hobbit"}
         </Button>
-        <Button onClick={() => navigate("/Orcs")} variant="orc">
+        <Button
+          onClick={() => navigate("/Orcs")}
+          variant="orc"
+          sx={{ fontSize: { sm: "1.75rem", lg: "1.25rem" } }}
+        >
           {"Servants of Sauron"}
         </Button>
       </ButtonGroup>

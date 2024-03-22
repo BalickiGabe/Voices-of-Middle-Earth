@@ -15,7 +15,10 @@ export default function ContentCard({ quote }) {
     >
       <Card>
         <CardContent>
-          <Typography variant="h2">
+          <Typography
+            variant="h2"
+            sx={{ fontSize: { sm: "3.5rem", lg: "1.75rem" } }}
+          >
             {quote || (
               <>
                 <q>Home is behind, the world ahead.</q>

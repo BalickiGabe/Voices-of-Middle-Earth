@@ -12,6 +12,7 @@ export default function HomeButton() {
           sx={{
             fontSize: "3rem",
             color: "goldenrod",
+            fontSize: { sm: "7rem", lg: "4rem" },
           }}
         />
       </Button>

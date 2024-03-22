@@ -32,6 +32,8 @@ export default function Buttons({
         "&:hover": hoverColor,
         boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
         transition: "0.3s",
+        fontSize: { sm: "2.5rem", lg: "1.2rem" },
+        fontWeight: { sm: "bold" },
       }}
     >
       {title}
