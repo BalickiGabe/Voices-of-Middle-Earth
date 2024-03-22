@@ -72,6 +72,8 @@ export default function Elves({ title }) {
         sx={{
           height: { sm: "8rem", lg: "3.4rem" },
           margin: "3rem",
+          display: "flex",
+          flexWrap: "wrap",
         }}
       >
         <Buttons
@@ -132,8 +134,3 @@ export default function Elves({ title }) {
     </Container>
   );
 }
-
-//             "",
-//
-//             "",
-//             "Shagrat",
