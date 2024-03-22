@@ -121,8 +121,8 @@ export default function Humans() {
           }}
         />
         <Buttons
-          title={"Gríma Wormtongue"}
-          onClickAction={() => handleButtonClick("Gríma Wormtongue")}
+          title={"Éowyn"}
+          onClickAction={() => handleButtonClick("Éowyn")}
           buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
             background: "linear-gradient(145deg, #A0522D, #8B4513)",
@@ -132,8 +132,8 @@ export default function Humans() {
           }}
         />
         <Buttons
-          title={"Éowyn"}
-          onClickAction={() => handleButtonClick("Éowyn")}
+          title={"Gríma Wormtongue"}
+          onClickAction={() => handleButtonClick("Gríma Wormtongue")}
           buttonColor={"linear-gradient(145deg, #8B4513, #A0522D)"}
           hoverColor={{
             background: "linear-gradient(145deg, #A0522D, #8B4513)",
