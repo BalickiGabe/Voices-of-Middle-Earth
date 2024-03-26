@@ -74,6 +74,7 @@ export default function Elves({ title }) {
           margin: "3rem",
           display: "flex",
           flexWrap: "wrap",
+          boxShadow: "none",
         }}
       >
         <Buttons

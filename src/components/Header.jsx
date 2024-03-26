@@ -7,17 +7,17 @@ export default function Header() {
   return (
     <Box
       sx={{
-        borderRadius: "8px",
+        borderRadius: { sm: "25px", lg: "8px" },
         backgroundImage: `url(${imageUrl})`,
         backgroundColor: "#c7b8ba",
         margin: "auto -24px",
-        padding: "16px 32px",
+        padding: "16px 36px",
         boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.3)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         height: "500px",
-        textAlign: "left",
+        textAlign: { sm: "center", lg: "Left" },
       }}
     >
       <Typography
@@ -36,8 +36,8 @@ export default function Header() {
           MozBackgroundClip: "text",
           MozTextFillColor: { lg: "transparent" },
           fontSize: {
-            sm: "6rem",
-            lg: "2.75rem",
+            sm: "5rem",
+            lg: "3.25rem",
           },
           fontWeight: "bold",
           letterSpacing: "0.1rem",

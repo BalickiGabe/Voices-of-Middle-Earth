@@ -10,13 +10,20 @@ export default function RaceButtons() {
     <div
       style={{
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
         flex: 1,
-        marginTop: "4rem",
+        marginTop: "1rem",
       }}
     >
-      <ButtonGroup variant="contained">
+      <ButtonGroup
+        variant="contained"
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          boxShadow: "none",
+        }}
+      >
         <Button
           onClick={() => navigate("/Maiar")}
           variant="race"

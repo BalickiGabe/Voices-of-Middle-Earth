@@ -115,7 +115,7 @@ const theme = createTheme({
             fontSize: "1.25rem",
             padding: "10px 20px",
             borderRadius: "5px",
-            color: "white",
+            color: "#FFF2CC",
             boxShadow: "0 3px 5px 2px rgba(0, 0, 0, 0.3)",
             transition: "0.3s",
             backgroundImage:

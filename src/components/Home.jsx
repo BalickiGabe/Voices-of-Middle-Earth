@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Container
       sx={{
-        bgcolor: "primary.main",
+        bgcolor: "#212121",
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
