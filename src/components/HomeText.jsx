@@ -33,7 +33,7 @@ export default function HomeText() {
             background: "#393E46",
             borderRadius: "10px",
             boxShadow: "0 6px 10px rgba(0, 0, 0, 0.3)",
-            fontSize: { sm: "2.25rem", lg: "1.5rem" },
+            fontSize: { sm: "2.5rem", lg: "1.5rem" },
             lineHeight: "1.6",
             fontWeight: "normal",
           }}
@@ -45,7 +45,14 @@ export default function HomeText() {
           path—Maiar, Human, Elf, Dwarf, Hobbit, or Mordor—and let
           Middle-earth's sagas unfold. What will you discover?
         </Typography>
-        <Typography variant="h3" sx={{ color: "white", marginTop: "3rem" }}>
+        <Typography
+          variant="h3"
+          sx={{
+            color: "white",
+            marginTop: "3rem",
+            fontSize: { sm: "2.5rem", lg: "1.5rem" },
+          }}
+        >
           Choose your path...
         </Typography>
         <RaceButtons />
