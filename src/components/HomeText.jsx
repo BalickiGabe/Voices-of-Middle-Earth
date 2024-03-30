@@ -6,7 +6,7 @@ export default function HomeText() {
   return (
     <Box
       sx={{
-        position: "relative", // Position the Box component relatively
+        position: "relative",
         height: "100vh",
       }}
     >

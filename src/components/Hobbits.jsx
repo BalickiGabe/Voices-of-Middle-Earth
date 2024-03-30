@@ -77,51 +77,51 @@ export default function Elves({ title }) {
         <Buttons
           title={"Bilbo"}
           onClickAction={() => handleButtonClick("Bilbo Baggins")}
-          buttonColor={"#8FBC8F"} // Soft green gradient
+          buttonColor={"#8FBC8F"}
           hoverColor={{
-            background: "#556B2F", // Deeper green on hover
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)", // Maintains a subtle shadow for depth
-            transform: "translateY(-1px)", // Gentle lift on hover for tactile feedback
+            background: "#556B2F",
+            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Frodo"}
           onClickAction={() => handleButtonClick("Frodo Baggins")}
-          buttonColor={"#8FBC8F"} // Soft green gradient
+          buttonColor={"#8FBC8F"}
           hoverColor={{
-            background: "#556B2F", // Deeper green on hover
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)", // Maintains a subtle shadow for depth
-            transform: "translateY(-1px)", // Gentle lift on hover for tactile feedback
+            background: "#556B2F",
+            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Sam"}
           onClickAction={() => handleButtonClick("Samwise Gamgee")}
-          buttonColor={"#8FBC8F"} // Soft green gradient
+          buttonColor={"#8FBC8F"}
           hoverColor={{
-            background: "#556B2F", // Deeper green on hover
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)", // Maintains a subtle shadow for depth
-            transform: "translateY(-1px)", // Gentle lift on hover for tactile feedback
+            background: "#556B2F",
+            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Merry"}
           onClickAction={() => handleButtonClick("Meriadoc Brandybuck")}
-          buttonColor={"#8FBC8F"} // Soft green gradient
+          buttonColor={"#8FBC8F"}
           hoverColor={{
-            background: "#556B2F", // Deeper green on hover
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)", // Maintains a subtle shadow for depth
-            transform: "translateY(-1px)", // Gentle lift on hover for tactile feedback
+            background: "#556B2F",
+            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)",
+            transform: "translateY(-1px)",
           }}
         />
         <Buttons
           title={"Pippin"}
           onClickAction={() => handleButtonClick("Peregrin Took")}
-          buttonColor={"#8FBC8F"} // Soft green gradient
+          buttonColor={"#8FBC8F"}
           hoverColor={{
-            background: "#556B2F", // Deeper green on hover
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)", // Maintains a subtle shadow for depth
-            transform: "translateY(-1px)", // Gentle lift on hover for tactile feedback
+            background: "#556B2F",
+            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .35)",
+            transform: "translateY(-1px)",
           }}
         />
       </ButtonGroup>

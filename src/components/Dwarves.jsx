@@ -8,12 +8,17 @@ import HomeButton from "./HomeButton";
 export default function Dwarves() {
   const imageUrl = process.env.PUBLIC_URL + "/images/Mine.webp";
 
+  // Import the useState hook from React to manage the quote state.
   const [quote, setQuote] = useState("");
 
+  // Defines an asynchronous function to fetch a quote for a given character name.
   const fetchAndSetQuote = async (characterName) => {
+    // Retrieve the access token from the environment variables.
     const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
 
     try {
+      // Fetch the character information from the API using the character name.
+      // Include the Authorization header with the Bearer token.
       const response = await fetch(
         `https://the-one-api.dev/v2/character?name=${characterName}`,
         {
@@ -23,10 +28,14 @@ export default function Dwarves() {
         }
       );
 
+      // Parse the JSON response into a JavaScript object.
       const data = await response.json();
+      // Check if the response has data and contains documents.
       if (data && data.docs && data.docs.length > 0) {
+        // Take the first character from the documents array.
         const character = data.docs[0];
 
+        // Fetch quotes for the character using the character's ID.
         const quoteResponse = await fetch(
           `https://the-one-api.dev/v2/character/${character._id}/quote`,
           {
@@ -36,19 +45,27 @@ export default function Dwarves() {
           }
         );
 
+        // Parse the JSON response of the quotes into a JavaScript object.
         const quoteData = await quoteResponse.json();
+        // Check if the quotes response has data and contains documents.
         if (quoteData && quoteData.docs && quoteData.docs.length > 0) {
+          // Select a random quote from the documents array.
           const randomQuote =
             quoteData.docs[Math.floor(Math.random() * quoteData.docs.length)];
+          // Format the quote string to include the dialog and the character name.
           const formattedQuote = `"${randomQuote.dialog}" - ${characterName}`;
+          // Update the quote state with the formatted quote.
           setQuote(formattedQuote);
         }
       }
     } catch (error) {
+      // Log any errors that occur during the fetch operation.
       console.error("Error fetching data:", error);
     }
   };
 
+  // Defines a function to be called when a button is clicked,
+  // triggering the fetchAndSetQuote function with the given character name.
   const handleButtonClick = (characterName) => {
     fetchAndSetQuote(characterName);
   };
@@ -78,12 +95,12 @@ export default function Dwarves() {
         <Buttons
           title={"Gimli"}
           onClickAction={() => handleButtonClick("Gimli")}
-          buttonColor={"linear-gradient(145deg, #C0C0C0, #F5F5F5)"} // Light metallic gradient for a polished effect
+          buttonColor={"linear-gradient(145deg, #C0C0C0, #F5F5F5)"}
           hoverColor={{
-            background: "linear-gradient(145deg, #F5F5F5, #C0C0C0)", // Reverse gradient for hover, enhancing the metallic feel
+            background: "linear-gradient(145deg, #F5F5F5, #C0C0C0)",
             boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .3)", // Shadow for depth, inset for a gleaming highlight
-            transform: "translateY(-1px)", // Slight lift on hover for tactile feedback
+              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .3)",
+            transform: "translateY(-1px)",
           }}
         />
       </ButtonGroup>
