@@ -9,7 +9,7 @@ Voices of Middle-Earth is designed for fans of the Lord of the Rings series to e
 ## Features
 
 - **Race Selection**: Immerse yourself by choosing from a list of Middle-Earth races.
-- **Character Discovery**: Find characters linked to each race and learn more about their lore through random generated character quotes, based on character selection.
+- **Character Discovery**: Each race page contains a React component that fetches and displays a random quote from a specified character using The One API, managing the quote's state with the useState hook and updating it upon a button click.
 - **Adaptive Design**: Enjoy your journey on any device, thanks to a fully responsive design crafted for all screens.
 
 ## Technologies Used
