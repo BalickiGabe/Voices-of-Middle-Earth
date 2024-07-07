@@ -14,6 +14,7 @@ export default function RaceButtons() {
         alignItems: "center",
         flex: 1,
         marginTop: "1rem",
+        marginBottom: "0rem",
       }}
     >
       <ButtonGroup

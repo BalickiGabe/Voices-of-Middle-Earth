@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Buttons from "./Buttons";
 import ContentCard from "./ContentCard";
 import HomeButton from "./HomeButton";
+import Footer from "./Footer";
 
 export default function Elves({ title }) {
   const imageUrl = process.env.PUBLIC_URL + "/images/Mordor.webp";
@@ -70,85 +71,88 @@ export default function Elves({ title }) {
   };
 
   return (
-    <Container
-      sx={{
-        borderRadius: "8px",
-        backgroundImage: `url(${imageUrl})`,
-        backgroundColor: "#c7b8ba",
-        boxShadow: "0 0 20px 0 rgba(0, 0, 0, 2)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        height: "100vh",
-        textAlign: "left",
-      }}
-    >
-      <HomeButton />
-      <ButtonGroup
-        variant="contained"
+    <>
+      <Container
         sx={{
-          height: { sm: "8rem", lg: "3.4rem" },
-          margin: "3rem",
-          display: "flex",
-          flexWrap: "wrap",
-          boxShadow: "none",
+          borderRadius: "8px",
+          backgroundImage: `url(${imageUrl})`,
+          backgroundColor: "#c7b8ba",
+          boxShadow: "0 0 20px 0 rgba(0, 0, 0, 2)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: "100vh",
+          textAlign: "left",
         }}
       >
-        <Buttons
-          title={"Uglúk"}
-          onClickAction={() => handleButtonClick("Uglúk")}
-          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
-          hoverColor={{
-            background: "linear-gradient(145deg, #b89672, #a67f5b)",
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-            transform: "translateY(-2px)",
+        <HomeButton />
+        <ButtonGroup
+          variant="contained"
+          sx={{
+            height: { sm: "8rem", lg: "3.4rem" },
+            margin: "3rem",
+            display: "flex",
+            flexWrap: "wrap",
+            boxShadow: "none",
           }}
-        />
-        <Buttons
-          title={"Snaga"}
-          onClickAction={() => handleButtonClick("Snaga (Two Towers orc)")}
-          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
-          hoverColor={{
-            background: "linear-gradient(145deg, #b89672, #a67f5b)",
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-            transform: "translateY(-2px)",
-          }}
-        />
-        <Buttons
-          title={"Gothmog"}
-          onClickAction={() =>
-            handleButtonClick("Gothmog (Lieutenant of Morgul)")
-          }
-          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
-          hoverColor={{
-            background: "linear-gradient(145deg, #b89672, #a67f5b)",
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-            transform: "translateY(-2px)",
-          }}
-        />
-        <Buttons
-          title={"Gorbag"}
-          onClickAction={() => handleButtonClick("Gorbag")}
-          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
-          hoverColor={{
-            background: "linear-gradient(145deg, #b89672, #a67f5b)",
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-            transform: "translateY(-2px)",
-          }}
-        />
-        <Buttons
-          title={"Shagrat"}
-          onClickAction={() => handleButtonClick("Shagrat")}
-          buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
-          hoverColor={{
-            background: "linear-gradient(145deg, #b89672, #a67f5b)",
-            boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
-            transform: "translateY(-2px)",
-          }}
-        />
-      </ButtonGroup>
+        >
+          <Buttons
+            title={"Uglúk"}
+            onClickAction={() => handleButtonClick("Uglúk")}
+            buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
+            hoverColor={{
+              background: "linear-gradient(145deg, #b89672, #a67f5b)",
+              boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
+              transform: "translateY(-2px)",
+            }}
+          />
+          <Buttons
+            title={"Snaga"}
+            onClickAction={() => handleButtonClick("Snaga (Two Towers orc)")}
+            buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
+            hoverColor={{
+              background: "linear-gradient(145deg, #b89672, #a67f5b)",
+              boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
+              transform: "translateY(-2px)",
+            }}
+          />
+          <Buttons
+            title={"Gothmog"}
+            onClickAction={() =>
+              handleButtonClick("Gothmog (Lieutenant of Morgul)")
+            }
+            buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
+            hoverColor={{
+              background: "linear-gradient(145deg, #b89672, #a67f5b)",
+              boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
+              transform: "translateY(-2px)",
+            }}
+          />
+          <Buttons
+            title={"Gorbag"}
+            onClickAction={() => handleButtonClick("Gorbag")}
+            buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
+            hoverColor={{
+              background: "linear-gradient(145deg, #b89672, #a67f5b)",
+              boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
+              transform: "translateY(-2px)",
+            }}
+          />
+          <Buttons
+            title={"Shagrat"}
+            onClickAction={() => handleButtonClick("Shagrat")}
+            buttonColor={"linear-gradient(145deg, #a67f5b, #8f6148)"}
+            hoverColor={{
+              background: "linear-gradient(145deg, #b89672, #a67f5b)",
+              boxShadow: "0 4px 10px 2px rgba(0, 0, 0, .45)",
+              transform: "translateY(-2px)",
+            }}
+          />
+        </ButtonGroup>
 
-      <ContentCard quote={quote} />
-    </Container>
+        <ContentCard quote={quote} />
+      </Container>
+      <Footer />
+    </>
   );
 }

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Buttons from "./Buttons";
 import ContentCard from "./ContentCard";
 import HomeButton from "./HomeButton";
+import Footer from "./Footer";
 
 export default function Elves() {
   const imageUrl = process.env.PUBLIC_URL + "/images/Rivendell.webp";
@@ -70,60 +71,63 @@ export default function Elves() {
   };
 
   return (
-    <Container
-      sx={{
-        borderRadius: "8px",
-        backgroundImage: `url(${imageUrl})`,
-        backgroundColor: "#c7b8ba",
-        boxShadow: "0 0 20px 0 rgba(0, 0, 0, 2)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        height: "100vh",
-        textAlign: "left",
-      }}
-    >
-      <HomeButton />
-      <ButtonGroup
-        variant="contained"
+    <>
+      <Container
         sx={{
-          height: { sm: "8rem", lg: "3.4rem" },
-          margin: "3rem",
+          borderRadius: "8px",
+          backgroundImage: `url(${imageUrl})`,
+          backgroundColor: "#c7b8ba",
+          boxShadow: "0 0 20px 0 rgba(0, 0, 0, 2)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: "100vh",
+          textAlign: "left",
         }}
       >
-        <Buttons
-          title={"Legolas"}
-          onClickAction={() => handleButtonClick("Legolas")}
-          buttonColor={"#AED581"}
-          hoverColor={{
-            background: "#C5E1A5",
-            boxShadow: "0 1px 3px rgba(0, 0, 0, .2)",
-            transform: "translateY(-1px)",
+        <HomeButton />
+        <ButtonGroup
+          variant="contained"
+          sx={{
+            height: { sm: "8rem", lg: "3.4rem" },
+            margin: "3rem",
           }}
-        />
-        <Buttons
-          title={"Galadriel"}
-          onClickAction={() => handleButtonClick("Galadriel")}
-          buttonColor={"#AED581"}
-          hoverColor={{
-            background: "#C5E1A5",
-            boxShadow: "0 1px 3px rgba(0, 0, 0, .2)",
-            transform: "translateY(-1px)",
-          }}
-        />
-        <Buttons
-          title={"Elrond"}
-          onClickAction={() => handleButtonClick("Elrond")}
-          buttonColor={"#AED581"}
-          hoverColor={{
-            background: "#C5E1A5",
-            boxShadow: "0 1px 3px rgba(0, 0, 0, .2)",
-            transform: "translateY(-1px)",
-          }}
-        />
-      </ButtonGroup>
+        >
+          <Buttons
+            title={"Legolas"}
+            onClickAction={() => handleButtonClick("Legolas")}
+            buttonColor={"#AED581"}
+            hoverColor={{
+              background: "#C5E1A5",
+              boxShadow: "0 1px 3px rgba(0, 0, 0, .2)",
+              transform: "translateY(-1px)",
+            }}
+          />
+          <Buttons
+            title={"Galadriel"}
+            onClickAction={() => handleButtonClick("Galadriel")}
+            buttonColor={"#AED581"}
+            hoverColor={{
+              background: "#C5E1A5",
+              boxShadow: "0 1px 3px rgba(0, 0, 0, .2)",
+              transform: "translateY(-1px)",
+            }}
+          />
+          <Buttons
+            title={"Elrond"}
+            onClickAction={() => handleButtonClick("Elrond")}
+            buttonColor={"#AED581"}
+            hoverColor={{
+              background: "#C5E1A5",
+              boxShadow: "0 1px 3px rgba(0, 0, 0, .2)",
+              transform: "translateY(-1px)",
+            }}
+          />
+        </ButtonGroup>
 
-      <ContentCard quote={quote} />
-    </Container>
+        <ContentCard quote={quote} />
+      </Container>
+      <Footer />
+    </>
   );
 }

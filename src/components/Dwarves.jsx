@@ -2,6 +2,7 @@ import { ButtonGroup, Container } from "@mui/material";
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import ContentCard from "./ContentCard";
+import Footer from "./Footer";
 
 import HomeButton from "./HomeButton";
 
@@ -71,41 +72,44 @@ export default function Dwarves() {
   };
 
   return (
-    <Container
-      sx={{
-        borderRadius: "8px",
-        backgroundImage: `url(${imageUrl})`,
-        backgroundColor: "#c7b8ba",
-        boxShadow: "0 0 20px 0 rgba(0, 0, 0, 2)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        height: "100vh",
-        textAlign: "left",
-      }}
-    >
-      <HomeButton />
-      <ButtonGroup
-        variant="contained"
+    <>
+      <Container
         sx={{
-          height: { sm: "8rem", lg: "3.4rem" },
-          margin: "3rem",
+          borderRadius: "8px",
+          backgroundImage: `url(${imageUrl})`,
+          backgroundColor: "#c7b8ba",
+          boxShadow: "0 0 20px 0 rgba(0, 0, 0, 2)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: "100vh",
+          textAlign: "left",
         }}
       >
-        <Buttons
-          title={"Gimli"}
-          onClickAction={() => handleButtonClick("Gimli")}
-          buttonColor={"linear-gradient(145deg, #C0C0C0, #F5F5F5)"}
-          hoverColor={{
-            background: "linear-gradient(145deg, #F5F5F5, #C0C0C0)",
-            boxShadow:
-              "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .3)",
-            transform: "translateY(-1px)",
+        <HomeButton />
+        <ButtonGroup
+          variant="contained"
+          sx={{
+            height: { sm: "8rem", lg: "3.4rem" },
+            margin: "3rem",
           }}
-        />
-      </ButtonGroup>
+        >
+          <Buttons
+            title={"Gimli"}
+            onClickAction={() => handleButtonClick("Gimli")}
+            buttonColor={"linear-gradient(145deg, #C0C0C0, #F5F5F5)"}
+            hoverColor={{
+              background: "linear-gradient(145deg, #F5F5F5, #C0C0C0)",
+              boxShadow:
+                "0 2px 4px rgba(0, 0, 0, .3), inset 0 1px 2px rgba(255, 255, 255, .3)",
+              transform: "translateY(-1px)",
+            }}
+          />
+        </ButtonGroup>
 
-      <ContentCard quote={quote} />
-    </Container>
+        <ContentCard quote={quote} />
+      </Container>
+      <Footer />
+    </>
   );
 }
