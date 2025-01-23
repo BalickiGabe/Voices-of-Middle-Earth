@@ -1,21 +1,23 @@
 # Voices of Middle-Earth
-# Check it out here: https://voicesofmiddleearth.com/
+**Check it out here**: [https://voicesofmiddleearth.com/](https://voicesofmiddleearth.com/)
 
-Welcome to Voices of Middle-Earth, a Lord of the Rings themed website created using React.js, Node.js, HTML, CSS, and JavaScript. This digital haven allows users to select different Middle-Earth races, delve into the characters associated with those races, and discover enchanting quotes from those characters, all fetched from The One API.
+Hey there! Welcome to *Voices of Middle-Earth*, a Lord of the Rings-inspired site I put together using React.js, Node.js, HTML, CSS, and JavaScript. The idea is to let fans dive deeper into Tolkien's world. They can pick a Middle-Earth race, meet some iconic characters, and enjoy random quotes from them, all thanks to The One API.
 
-## Introduction
+## What’s It All About?
 
-Voices of Middle-Earth is designed for fans of the Lord of the Rings series to explore the depth and breadth of Tolkien's universe. By navigating through the choices of races and characters, users can uncover quotes that resonate with the wisdom, humor, and bravery that define this legendary world. The public API that I was fetching from unfortunately only includes character quotes from the trillogy series.
+If you’re a fan of Lord of the Rings, this site is made for you! It gives you a way to explore different races from Middle-Earth, learn more about the characters tied to them, and enjoy some of their best quotes. Unfortunately, the API I’m pulling from only has quotes from the original trilogy, but it’s still a fun ride through Tolkien’s world.
 
 ## Features
 
-- **Race Selection**: Immerse yourself by choosing from a list of Middle-Earth races.
-- **Character Discovery**: Each race page contains a React component that fetches and displays a random quote from a specified character using The One API, managing the quote's state with the useState hook and updating it upon a button click.
-- **Adaptive Design**: Enjoy your journey on any device, thanks to a fully responsive design crafted for all screens.
+- **Race Selection**: Pick your favorite Middle-Earth race and get ready to dive in.
+- **Character Discovery**: On each race page, I’ve added a React component that grabs a random quote from a character, using The One API. The best part? The quote refreshes with the click of a button.
+- **Adaptive Design**: Whether you're on your phone, tablet, or desktop, the site adjusts to look great on any screen.
 
-## Technologies Used
+## Tech Stack
 
-- **React.js**: Utilized for its powerful UI capabilities, allowing for a dynamic and interactive user experience.
-- **Node.js**: Provides the backend support, facilitating communication with The One API and handling application logic.
-- **HTML & CSS**: The foundation of the website's structure and style, creating a visually appealing Middle-Earth environment.
-- **JavaScript**: Empowers the interactive elements of the website, enhancing the user's journey through Middle-Earth.
+- **React.js**: I used React for its flexibility and ability to create a smooth, interactive experience.
+- **Node.js**: Handles backend tasks, making sure everything runs smoothly by fetching data from The One API.
+- **HTML & CSS**: These build out the site’s structure and style, giving it that authentic Middle-Earth vibe.
+- **JavaScript**: Powers all the interactive features that make the site fun to use.
+
+It was a blast working with Material UI for the styling. It really helped give the site a polished, modern feel while keeping it easy to work with.
